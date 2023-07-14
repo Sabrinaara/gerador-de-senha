@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+    <link rel="shortcut icon" href="/permissions-svgrepo-com.svg" type="image/x-icon">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+  <section class="bloco">
+  <h1 class="titulo">Gerador De Senha</h1>
+
+  <main class="container-input">
+    <span>Tamanho <span id="valor"></span> Caracteres </span >
+    <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+
+    <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+  </main>
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">9299389</span>
+        <span class="tooltip">Click na senha para copia-lá.</span>
+    </div>
+  </section>
+    <script src="/index.js"></script>
+</body>
+</html>
